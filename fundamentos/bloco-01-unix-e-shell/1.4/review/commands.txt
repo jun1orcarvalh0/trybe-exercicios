@@ -1,0 +1,52 @@
+comando1 | comando2 - envia a saida do comando1 para a entrada do comando2
+comando > arquivo - evia a saida para um arquivo
+comando >> arquivo - adiciona saida para a um arquivo
+comando < - evia a entrada (por ex as informacoes de um .txt) para um comando (ex sort)
+cat > - modifica (reseta se tiver algo) e cria se preciso um arquivo
+cat >> - acrescenta item ao arquivo mantendo o que ja tinha nele
+Ctrl + D - finaliza o comando cat
+cat arquivo1 arquivo2 > arquivo3 - junta as informacoes no terceiro arquivo
+sort < - ordena as informacoes em ordem alfabetica sem alterar a saida
+sort < arquivo1 > arquivo2 - da output e organiza em ordem alfabetica e depois da input do arquivo2
+sort -o - da output nas informacoes
+
+who - para saber quem tem acesso as informacoes
+comando1 | comando2 - executa um comando e manda para o outro depois da output
+ls -l ou ll - mostra informacoes sobre o acesso
+chmod - comando para alterar permissoes do arquivo
+ps - lista de processos sendo executados
+
+comando & - executa que ele em segundo plano (background)
+sleep - para o terminal por determinado tempo
+jobs - exibe todos os processos executados
+% - posicao do processo na lista de jobs
+fg - continua o processo (em primeiro plano)
+bg - contunua o processo (em segundo plano) ou move ele para segundo plano
+kill - termina o processo
+kill -9 - forca o processo a ser finalizado
+Ctrl + Z - pausa o processo
+Ctrl + C - finaliza o precesso
+ps - lista processos atuais
+
+find(localizar): pode usar os parametros name, date, size e type
+
+	       local
+	         |
+	ex: find . -name "*.txt" (localiza arquivos terminados em .txt)
+	    find . -type d (localiza todos os diretorios)
+	    find . -type f (localiza todos os arquivos)
+	    find . -name "exemplo*" (localiza arquivos e diretorios que comecam em com "exemplo")
+	    find . -type f -name "exemplo*" (localizar apenas arquivos que comecam em com "exemplo")
+	    find . -type d -name "exemplo*" (localizar apenas diretorios que comecam em com "exemplo")
+
+history: mostra o historico de comando que foi executado no terminal
+
+	ex: history (mostra todo o historico)
+	    history | tail -5 (mostra os ultimos cinco comandos do historico)
+	    history | head -4 (mostra os quatro primeiros comandos do historico)
+	    
+echo: um comando utilizado em scripts para exibir mensagens na tela ou em um arquivo
+
+	ex: echo "Esse é um teste" (exibe no terminal)
+	    echo "Esse é um teste" > arquivo.txt (define texto dentro de um arquivo)
+	    echo "Esse é um teste" >> arquivo.txt (acrescenta um texto dentro de um arquivo)

@@ -1,0 +1,48 @@
+ls -l ou ll - para mostrar as informacoes sobre o acesso
+r = tem acesso de leitura
+w = pode editar/modificar conteudo de um diretorio ou arquivo [write]
+x = permite acessar/executar um arquivo ou diretorio pelo comando cd [execute]
+- = no inicio da sequencia indica um arquivo comum
+d = no inicio da sequencia quer dizer que e um diretorio
+
+*como funciona as sequencia de caracteries
+pode ser separada em 4 grupos
+
+1 (ex: - ou d) = um arquivo comum ou diretorio
+3 (ex: rw- ou rwx) = permissoes do usuario
+3 (ex: r--) = permicoes do grupo de usuarios (no r-- eles so podem ler)
+3 (ex: r--) = outros usuarios (usuarios restantes que estao fora do grupo)
+
+*alterar as permissoes do arquivo
+
+chmod - comando para alterar
+u - altera permissoes para o usuario que esta sendo usado
+g - altera permissoes para o grupo
+o - altera permissoes para outros usuarios
+a - altera permissoes para todos os usuarios
+
++ - acrescentar alguma permissao
+- - remover alguma permissao
+= - deixar exatamente igual a condicao que queremos
+
+ex: chmod u-rw [arquivo ou diretorio]
+
+*alterar permissao do arquivo (modo octal)
+
+r = 4
+w = 2
+x = 1
+
+rwx = 7
+r-- = 4
+-w- = 2
+--x = 1
+rw- = 6
+r-x = 5
+-wx = 3
+--- = 0
+
+          ugo
+          |||
+ex: chmod 644 [arquivo ou diretorio]
+
