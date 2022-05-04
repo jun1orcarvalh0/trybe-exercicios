@@ -1,0 +1,51 @@
+***Git clone
+
+git clone - copia um repositorio Git ja existente
+
+***Git log
+
+code . - abre o vscode na pasta que esta
+git status - mostra se algo precisa ser adicionado ou commitado
+git log - mostra todos os commits feitos
+
+***Git remove
+
+git rm arquivo - remove um arquivo, depois tem que dar commit
+
+	  tenham arquivos deletados
+	              | lista em forma de sumario
+	              |      |
+git log --diff-filter=D --summary 
+              |
+ filtro para ver o que tem de !=
+ 
+ git checkout '4 primeiros caracteries do commit'~1 'arquivo a ser recuperado'
+ ^                                                 |
+ |                                          passar para ok
+ |____ recupera o arquivo que esta no commit mencionado logo apos isso tem que dar um git add e um git commit para recuperar o arquivo na branch
+
+***Git igione - serve para ignorar arquivos que nao deseja adicionar***
+
+touch .gitignore - cria o arquivo
+cat >> .gitignore ou cat > .gitignore - para alterar o que deve ser ignorado pelo git status e git add
+
+https://www.toptal.com/developers/gitignore - site bom para criar arquivos .gitignore
+
+***Git push, pull, fetch
+
+git remote add origin ssh/https - para vincular ele com o GitHub
+git push -u origin main - para enviar a branch
+git fetch - puxa o repositorio remoto para o repositorio local
+git status - para verificar se existe mudancas
+git pull - verifica se tem alteracoes mas tambem faz o merge
+
+Pull request
+
+git push -u origin 'nome da branch' - cria um pullrequest no github
+
+Obs
+git remote -v - mostra quais sao as permissoes possui
+git checkout -b 'nome da branch' - ja cria e muda para branch
+git branch -d 'nome da branch' - deleta a branch
+
+***
