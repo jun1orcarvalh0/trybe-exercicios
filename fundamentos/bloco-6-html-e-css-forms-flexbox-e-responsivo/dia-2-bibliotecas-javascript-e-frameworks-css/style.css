@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 2px;
+}
+
+#destino {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  border: rgb(135, 107, 107) solid 5px;
+  padding: 20px;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+}
