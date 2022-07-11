@@ -1,0 +1,9 @@
+1 - É um código que é executado paralelamente com os códigos síncronos. Ou seja, ele não precisa terminar para que os outros códigos síncronos continuem executando. A diferença é que os códigos executados de modo síncrono precisam esperar o outro código retornar para que possam ser executados, como se fosse uma fila.
+
+2 - Callback hell. Dependendo da complexidade do código chamar callbacks dentro de callbacks pode fazer com que seu código fique confuso e você ou outra pessoa que queira modificá-lo pode ter problemas.
+
+3 - As promises são assíncronas por padrão, então elas não vão atrapalhar o fluxo do seu código e ainda possuem funções que ajudam no controle do fluxo assíncrono.
+
+4 - Ele deve ser assíncrono.
+
+5 - É uma função que tem como finalidade fazer uma requisição a uma url de uma determinada api.
